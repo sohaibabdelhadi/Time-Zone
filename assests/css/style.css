@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;600;700&display=swap');
+
+/* public style */
+*::before::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+     background-color: #f1f1f1;
+}
+
+
+ul{
+    list-style: none;
+    width: 60%;
+}
+
+a{
+    text-decoration: none;
+    
+}
+nav{
+    background-color: #fff;
+    padding: 3% 2%;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 30%;
+
+}
+nav .nav-list{
+    width: 60%;
+    
+}
+nav .nav-list .list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    
+
+}
+nav .nav-list .list .list-item{
+    margin-right: 32px;
+    text-transform: capitalize;
+    
+}
+
+nav .nav-list .list .list-item .nav-link{
+    font-size: 16px;
+    font-weight: 700;
+    color: #141517;
+    transition:all 0.5s;
+}
+
+nav .nav-list .list .list-item:hover .nav-link{
+    color: #ff2020;
+    
+
+}
+
+nav .nav-list .list .list-item .dropdown{
+    position: absolute;
+    top: 83px;
+    background-color: #fefefe;
+    padding: 30px 15px 0;
+    width: 160px;
+    border-top: 2px solid #ff2020;
+    border-radius: 10px 10px 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:  all 1s;
+    
+}
+
+nav .nav-list .list .list-item:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}  
+
+nav .nav-list .list .list-item .dropdown .dropdown-list{
+    margin-bottom: 15px;
+}
+
+nav .nav-list .list .list-item .dropdown:before {
+    content: " ";
+    position: absolute;
+    border-top: solid 8px transparent;
+    border-bottom: solid 8px red;
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
+    top: -17px;
+
+    /* or use clip path  */
+}
+
+nav .nav-list .list .list-item:nth-child(4)::after{
+    content: 'HOT';
+    position: absolute;
+    top: -25px;
+    background-color: #ff2020;
+    padding: 5px 5px;
+    filter: drop-shadow(2px 4px 6px #ccc);
+    border-radius: 7px;
+    font-size: 12px;
+    color: #fff;
+
+}
+
+
+
+nav .nav-list .list .list-item.dropdown{
+    position: absolute;
+}
+
+nav .nav-icon{
+    width: 20%;
+    text-align: right;
+}
+
+.checkedLabel,#inputCheck{
+    display: none;
+}

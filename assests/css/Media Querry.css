@@ -1,0 +1,61 @@
+@media(max-width:991px){
+    nav .nav-list{
+        left: 5%;
+        position: absolute;
+        background-color: #333;
+        top: 100%;
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 28px;
+        opacity: 0;
+        visibility: hidden;
+
+
+    }
+    nav .nav-list .list{
+        display: unset;
+        
+    }
+    nav .nav-list .list .list-item{
+        margin-top: 20px;
+         margin-left: 20px;    
+    }
+    nav .nav-list .list .list-item:nth-child(4)::after{
+       display: none;
+       
+    }
+
+    nav .nav-list .list .list-item .nav-link{
+        color: #fff;
+        
+    }
+
+    nav .nav-list .list .list-item .dropdown{
+        background-color: unset;
+        border:0;
+        border-radius: 0;
+        position: unset;
+        display: none;
+    }
+
+    nav .nav-list .list .list-item:hover .dropdown{
+        display: block;
+    }
+    nav .nav-list .list .list-item:hover .dropdown .dropdown-list .dropdown-link{
+        color: #fff;
+    }
+
+    nav .nav-list .list .list-item .dropdown:before{
+        display: none;
+    }
+
+    .checkedLabel{
+        display: block;
+        order: 3;
+
+    }
+    nav #inputCheck:checked + .nav-list{
+        opacity: 1;
+        visibility: visible;
+    }
+}
