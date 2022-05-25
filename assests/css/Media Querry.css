@@ -49,13 +49,52 @@
         display: none;
     }
 
+    nav .nav-icon {
+        text-align: left;
+        margin-right: 50px;
+        
+    }
+
+    nav .nav-icon i{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    nav .checkedLabel{
+        font-size: 30px;
+
+    }
+
     .checkedLabel{
         display: block;
         order: 3;
+        cursor: pointer;
 
     }
     nav #inputCheck:checked + .nav-list{
         opacity: 1;
         visibility: visible;
     }
+}
+
+@media(max-width:575px){
+    nav .logo{
+        width: 26%;
+    }
+
+    nav .logo img{
+        width: 100%;
+    }
+
+    nav .nav-icon{
+        width: 33%;
+        text-align: center;
+    }
+
+    nav .nav-icon i{
+        
+        margin-left: 7px;
+        font-size: 16px;
+    }
+    
 }
